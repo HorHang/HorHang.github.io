@@ -52,7 +52,8 @@ table {
 }
 
 body {
-	-webkit-text-size-adjust: none;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 
 mark {

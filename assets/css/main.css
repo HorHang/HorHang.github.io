@@ -609,7 +609,7 @@ input, select, textarea {
 		opacity: 0;
 		position: relative;
 		text-align: center;
-		top: 2em;
+		top: 1em;
 		vertical-align: middle;
 		width: 90%;
 	}

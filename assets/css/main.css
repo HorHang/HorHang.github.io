@@ -430,7 +430,6 @@ input, select, textarea {
 		height: 100%;
 		left: 0;
 		overflow: auto;
-		position: fixed;
 		text-align: center;
 		top: 0;
 		width: 100%;

@@ -51,10 +51,6 @@ table {
 	border-spacing: 0;
 }
 
-body {
-	-webkit-text-size-adjust: none;
-}
-
 mark {
 	background-color: transparent;
 	color: inherit;
@@ -433,6 +429,7 @@ input, select, textarea {
 	#main {
 		height: 100%;
 		left: 0;
+		overflow: auto;
 		position: fixed;
 		text-align: center;
 		top: 0;

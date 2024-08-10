@@ -128,7 +128,7 @@ input, select, textarea {
 		border: 2px solid #ccc;
 		padding: 20px;
 		margin: auto;
-		width: 1200px;
+		width: 80%;
 		background-color: hsla(195, 45%, 50%, 0.69);
 		place-items: center;
 		border-radius: 5px;

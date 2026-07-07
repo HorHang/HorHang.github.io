@@ -10,8 +10,9 @@ layout: default
     <h1 class="post-title">{{ page.title }}</h1>
     {% if page.description %}<p class="post-lede">{{ page.description }}</p>{% endif %}
     {% if page.coverImage %}
+    {% if page.coverImage contains '://' %}{% assign cover_src = page.coverImage %}{% else %}{% assign cover_src = '/assets/images/blog/' | append: page.coverImage %}{% endif %}
     <figure class="post-cover">
-      <img src="/assets/images/blog/{{ page.coverImage }}" alt="{{ page.coverImageAlt | escape }}">
+      <img src="{{ cover_src }}" alt="{{ page.coverImageAlt | escape }}">
     </figure>
     {% endif %}
   </header>

@@ -6,6 +6,7 @@
 
   {%- assign page_title = page.title | default: site.title -%}
   {%- assign page_desc = page.description | default: site.description -%}
+  {%- if page.ogImage contains '://' -%}{%- assign og_image = page.ogImage -%}{%- elsif page.ogImage -%}{%- assign og_image = '/assets/images/blog/' | append: page.ogImage | absolute_url -%}{%- endif -%}
   <title>{{ page_title }}{% if page.title %} · {{ site.title }}{% endif %}</title>
   <meta name="description" content="{{ page_desc | strip_html | escape }}">
   {% if page.author %}<meta name="author" content="{{ page.author }}">{% endif %}
@@ -17,11 +18,11 @@
   <meta property="og:title" content="{{ page.ogTitle | default: page_title }}">
   <meta property="og:description" content="{{ page.ogDescription | default: page_desc | strip_html | escape }}">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
-  {% if page.ogImage %}<meta property="og:image" content="{{ '/assets/images/blog/' | append: page.ogImage | absolute_url }}">{% endif %}
+  {% if og_image %}<meta property="og:image" content="{{ og_image }}">{% endif %}
   <meta name="twitter:card" content="{{ page.twitterCard | default: 'summary_large_image' }}">
   <meta name="twitter:title" content="{{ page.ogTitle | default: page_title }}">
   <meta name="twitter:description" content="{{ page.ogDescription | default: page_desc | strip_html | escape }}">
-  {% if page.ogImage %}<meta name="twitter:image" content="{{ '/assets/images/blog/' | append: page.ogImage | absolute_url }}">{% endif %}
+  {% if og_image %}<meta name="twitter:image" content="{{ og_image }}">{% endif %}
 
   <link rel="stylesheet" href="/assets/css/blog.css">
 </head>

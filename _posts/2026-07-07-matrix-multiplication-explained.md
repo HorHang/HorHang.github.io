@@ -11,7 +11,7 @@ twitterCard: "summary_large_image"
 date: "2026-07-07"
 lastUpdated: "2026-07-07"
 author: "Hang Hor"
-authorBio: "Hang Hor is a senior data scientist who writes GPU-kernel and deep-learning explainers while working through the llm.c course in Triton and CUDA."
+authorBio: "Hang Hor is a data scientist who writes GPU-kernel and deep-learning explainers while working through the llm.c course in Triton and CUDA."
 tags: ["triton", "matrix-multiplication", "gpu-kernels", "cuda", "deep-learning"]
 ---
 

@@ -27,7 +27,7 @@
   <text x="80" y="318" fill="#f8fafc" font-family="sans-serif" font-size="56" font-weight="800">Multiplication in Triton</text>
   <text x="80" y="372" fill="#94a3b8" font-family="sans-serif" font-size="26">A companion to the official tutorial</text>
 
-  <rect x="80" y="430" width="430" height="72" rx="12" fill="#3f9d6b" fill-opacity="0.18" stroke="#3f9d6b" stroke-width="1.5"/>
-  <text x="104" y="476" fill="#e07b39" font-family="sans-serif" font-size="30" font-weight="800">220 &#8594; 245 TFLOPS</text>
-  <text x="352" y="476" fill="#cbd5e1" font-family="sans-serif" font-size="20">on A100, from grouping alone</text>
+  <rect x="80" y="428" width="420" height="102" rx="12" fill="#3f9d6b" fill-opacity="0.18" stroke="#3f9d6b" stroke-width="1.5"/>
+  <text x="104" y="474" fill="#e07b39" font-family="sans-serif" font-size="30" font-weight="800">220 &#8594; 245 TFLOPS</text>
+  <text x="104" y="508" fill="#cbd5e1" font-family="sans-serif" font-size="20">on A100, from grouping alone</text>
 </svg>

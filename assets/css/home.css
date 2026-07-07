@@ -1,0 +1,120 @@
+/* Landing page for HorHang.github.io — light, minimal, centered.
+   Self-contained; shares type scale and accent with the blog (blog.css). */
+
+:root {
+  --bg: #ffffff;
+  --fg: #1f2328;
+  --muted: #57606a;
+  --border: #e5e8eb;
+  --link: #1f2328;
+  --accent: #e07b39;
+  --measure: 46rem;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--link); text-decoration: none; }
+a:hover { color: var(--accent); }
+
+/* --- Top navigation --- */
+.site-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 1.25rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+}
+.site-nav a { color: var(--muted); }
+.site-nav a:hover { color: var(--fg); }
+
+/* --- Layout --- */
+.site-main {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 1rem 1.25rem 3rem;
+}
+
+/* --- Hero --- */
+.hero { text-align: center; padding: 1.5rem 0 3rem; }
+.hero-photo {
+  width: 148px;
+  height: 148px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 1.5rem;
+  display: block;
+}
+.hero-name {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  margin: 0 0 0.5rem;
+}
+.hero-subtitle { color: var(--fg); font-size: 1.05rem; margin: 0 0 0.4rem; }
+.hero-tagline { color: var(--muted); font-style: italic; font-size: 1.05rem; margin: 0; }
+
+/* --- Sections --- */
+.section { padding: 2.5rem 0; border-top: 1px solid var(--border); }
+.section h2 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  font-weight: 600;
+  margin: 0 0 1.2rem;
+}
+.section p { margin: 0 0 1.1rem; }
+.section p:last-child { margin-bottom: 0; }
+.section a { color: var(--accent); }
+.section a:hover { text-decoration: underline; }
+
+/* --- Links row (thesis / slides / resume) --- */
+.link-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  margin-top: 0.5rem;
+  font-size: 0.98rem;
+}
+
+/* --- Contact / social --- */
+.contact-email { font-size: 1.05rem; }
+.social-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-top: 1rem;
+  font-size: 0.98rem;
+}
+.social-row a { color: var(--muted); }
+.social-row a:hover { color: var(--accent); }
+
+/* --- Footer --- */
+.site-footer {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 2.5rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  body { font-size: 17px; }
+  .hero-name { font-size: 2rem; }
+  .site-nav { gap: 1.25rem; }
+}

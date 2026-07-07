@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {%- assign page_title = page.title | default: site.title -%}
+  {%- assign page_desc = page.description | default: site.description -%}
+  <title>{{ page_title }}{% if page.title %} · {{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ page_desc | strip_html | escape }}">
+  {% if page.author %}<meta name="author" content="{{ page.author }}">{% endif %}
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="shortcut icon" href="/assets/css/images/favicon.ico">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+  <meta property="og:title" content="{{ page.ogTitle | default: page_title }}">
+  <meta property="og:description" content="{{ page.ogDescription | default: page_desc | strip_html | escape }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  {% if page.ogImage %}<meta property="og:image" content="{{ '/assets/images/blog/' | append: page.ogImage | absolute_url }}">{% endif %}
+  <meta name="twitter:card" content="{{ page.twitterCard | default: 'summary_large_image' }}">
+  <meta name="twitter:title" content="{{ page.ogTitle | default: page_title }}">
+  <meta name="twitter:description" content="{{ page.ogDescription | default: page_desc | strip_html | escape }}">
+  {% if page.ogImage %}<meta name="twitter:image" content="{{ '/assets/images/blog/' | append: page.ogImage | absolute_url }}">{% endif %}
+
+  <link rel="stylesheet" href="/assets/css/blog.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-title" href="/">Hang Hor</a>
+    <nav class="site-nav">
+      <a href="/">Home</a>
+      <a href="/blog/">Blog</a>
+    </nav>
+  </header>
+
+  <main class="site-main">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; {{ site.time | date: "%Y" }} Hang Hor ·
+      <a href="https://github.com/HorHang">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/hor-hang/">LinkedIn</a> ·
+      <a href="https://x.com/HangHor">Twitter</a>
+    </p>
+  </footer>
+</body>
+</html>

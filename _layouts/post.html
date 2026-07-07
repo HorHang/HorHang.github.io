@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<article class="post">
+  <header class="post-header">
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+      {% if page.tags %}<span class="post-tags">{% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% endfor %}</span>{% endif %}
+    </p>
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% if page.description %}<p class="post-lede">{{ page.description }}</p>{% endif %}
+    {% if page.coverImage %}
+    <figure class="post-cover">
+      <img src="/assets/images/blog/{{ page.coverImage }}" alt="{{ page.coverImageAlt | escape }}">
+    </figure>
+    {% endif %}
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  {% if page.author %}
+  <hr>
+  <p class="post-byline">Written by <strong>{{ page.author }}</strong>{% if page.authorBio %} — {{ page.authorBio }}{% endif %}</p>
+  {% endif %}
+
+  <p class="post-back"><a href="/blog/">← All posts</a></p>
+</article>

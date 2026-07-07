@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Cover: Efficient Matrix Multiplication in Triton. Grouped tile ordering lifts an A100 from 220 to 245 TFLOPS.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#3b1f6b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <g transform="translate(760,120)" opacity="0.9">
+    <g fill="none" stroke="#5b6b8c" stroke-width="1.5">
+      <rect x="0" y="0" width="342" height="342"/>
+    </g>
+    <g stroke="#5b6b8c" stroke-width="1" opacity="0.55">
+      <path d="M38 0 V342 M76 0 V342 M114 0 V342 M152 0 V342 M190 0 V342 M228 0 V342 M266 0 V342 M304 0 V342"/>
+      <path d="M0 38 H342 M0 76 H342 M0 114 H342 M0 152 H342 M0 190 H342 M0 228 H342 M0 266 H342 M0 304 H342"/>
+    </g>
+    <rect x="0" y="0" width="114" height="114" fill="#3f9d6b" fill-opacity="0.28"/>
+    <g fill="#e07b39" font-family="sans-serif" font-size="22" font-weight="700" text-anchor="middle">
+      <text x="19" y="27">0</text><text x="19" y="65">1</text><text x="19" y="103">2</text>
+      <text x="57" y="27">3</text><text x="57" y="65">4</text><text x="57" y="103">5</text>
+      <text x="95" y="27">6</text><text x="95" y="65">7</text><text x="95" y="103">8</text>
+    </g>
+  </g>
+
+  <text x="80" y="250" fill="#f8fafc" font-family="sans-serif" font-size="56" font-weight="800">Efficient Matrix</text>
+  <text x="80" y="318" fill="#f8fafc" font-family="sans-serif" font-size="56" font-weight="800">Multiplication in Triton</text>
+  <text x="80" y="372" fill="#94a3b8" font-family="sans-serif" font-size="26">A companion to the official tutorial</text>
+
+  <rect x="80" y="430" width="430" height="72" rx="12" fill="#3f9d6b" fill-opacity="0.18" stroke="#3f9d6b" stroke-width="1.5"/>
+  <text x="104" y="476" fill="#e07b39" font-family="sans-serif" font-size="30" font-weight="800">220 &#8594; 245 TFLOPS</text>
+  <text x="352" y="476" fill="#cbd5e1" font-family="sans-serif" font-size="20">on A100, from grouping alone</text>
+</svg>

@@ -235,9 +235,6 @@ Draw the corner before you type. Once the sketch is on paper, you can write the 
 - Christian Mills, *GPU MODE Lecture 14: A Practitioner's Guide to Triton*, 2024, retrieved 2026-07-07, https://christianjmills.com/posts/cuda-mode-notes/lecture-014/
 - L. Weitkamp, *Triton Exercises: Block Pointers*, retrieved 2026-07-07, https://lweitkamp.github.io/triton_exercises/introduction/block_pointers.html
 
-### About the author
-
-**Hang Hor** is a senior data scientist who writes GPU-kernel and deep-learning explainers while working through the llm.c course, implementing kernels in both Triton and CUDA. This piece grew out of hands-on notes taken while reproducing the official Triton matmul tutorial line by line.
 
 {% raw %}
 <script type="application/ld+json">

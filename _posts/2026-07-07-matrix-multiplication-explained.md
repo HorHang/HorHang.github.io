@@ -57,7 +57,7 @@ Here is the intuition, counted in block-loads. Suppose you want to finish the fi
   <g font-family="sans-serif" font-size="13" fill="#8a94a6">
     <text x="10" y="80">Row-major</text>
     <rect x="120" y="66" width="400" height="24" rx="4" fill="#c44e4e"/>
-    <text x="528" y="83" text-anchor="end" fill="#fff" font-weight="700">90</text>
+    <text x="528" y="83" font-weight="700">90</text>
     <text x="10" y="140">Grouped</text>
     <rect x="120" y="126" width="240" height="24" rx="4" fill="#3f9d6b"/>
     <text x="368" y="143" font-weight="700">54</text>
@@ -183,7 +183,7 @@ The reason this whole exercise pays off is that matmul is **compute-bound**: it 
     <text x="480" y="83" font-weight="700">220 TFLOPS</text>
     <text x="10" y="140">Grouped</text>
     <rect x="120" y="126" width="392" height="24" rx="4" fill="#3f9d6b"/>
-    <text x="520" y="143" text-anchor="end" fill="#fff" font-weight="700">245</text>
+    <text x="520" y="143" font-weight="700">245</text>
   </g>
   <text x="10" y="200" font-family="sans-serif" font-size="12" fill="#8a94a6" opacity="0.7">Source: Triton official tutorial, 2026. Same kernel math; only the tile schedule differs.</text>
 </svg>
@@ -222,7 +222,7 @@ The Triton matmul kernel only looks intimidating because two ideas are compresse
 
 Draw the corner before you type. Once the sketch is on paper, you can write the kernel by reading it off the page instead of memorizing forty lines.
 
-**Next:** matmuls rarely live alone. The real payoff is fusing them with the ops around them. See Fused Attention (tutorial 06), where matmuls are chained with softmax inside one Triton kernel.
+**Next:** matmuls rarely live alone. The real payoff is fusing them with the ops around them. See [Fused Attention](06-fused-attention.ipynb), where matmuls are chained with softmax inside one Triton kernel.
 
 ---
 
@@ -236,7 +236,6 @@ Draw the corner before you type. Once the sketch is on paper, you can write the 
 - L. Weitkamp, *Triton Exercises: Block Pointers*, retrieved 2026-07-07, https://lweitkamp.github.io/triton_exercises/introduction/block_pointers.html
 
 
-{% raw %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -252,7 +251,7 @@ Draw the corner before you type. Once the sketch is on paper, you can write the 
       "author": {
         "@type": "Person",
         "name": "Hang Hor",
-        "description": "Senior data scientist writing GPU-kernel and deep-learning explainers in Triton and CUDA."
+        "description": "Data scientist writing GPU-kernel and deep-learning explainers in Triton and CUDA."
       }
     },
     {
@@ -303,4 +302,4 @@ Draw the corner before you type. Once the sketch is on paper, you can write the 
   ]
 }
 </script>
-{% endraw %}
+---
